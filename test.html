@@ -1,0 +1,28 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+<style>
+    p{
+        background-color: blue;
+        min-width: 200px;
+        min-height: 50px;
+    }
+</style>
+<p>Hello</p>
+<button>
+    bấm
+</button>
+<script>
+
+
+    // //
+    // nút = document.querySelector('button');
+    // nút.onclick = function () {
+    //     // Truy cập vào thẻ
+    //     thẻ = document.querySelector('p');
+    //     thẻ.style.cssText += 'color:red ; font-size: 40px';
+    // };
+    $('button').click(function() {
+        // alert('Đang làm...');
+        // $('p').slideToggle(5000);
+        $('p').fadeToggle(3000)
+    });
+</script>
